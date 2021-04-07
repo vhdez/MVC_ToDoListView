@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MVC_ToDoListView.Controller">
+   <children>
+      <HBox prefHeight="27.0" prefWidth="600.0">
+         <children>
+            <TextField fx:id="textField1" prefHeight="27.0" prefWidth="358.0" />
+            <DatePicker fx:id="myDatePicker" prefHeight="27.0" prefWidth="194.0" />
+            <Button fx:id="saveButton" mnemonicParsing="false" onAction="#userSavedText" prefHeight="27.0" prefWidth="66.0" text="Save!" />
+         </children>
+      </HBox>
+      <ListView fx:id="myTextList" prefHeight="377.0" prefWidth="600.0" />
+   </children>
+</VBox>
